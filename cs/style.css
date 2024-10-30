@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rationale&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container h1 {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: darkorange;
+}
+.botao{
+  font-family: poppins;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+  color: darkgoldenrod;
+  border: 0;
+} 
+.container .galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .galeria .img-box {
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border: 0.5px solid lightgray;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: url(../galeria/captain-america-1024x640.webp);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  transition: width 0.4s;
+}
+.container .galeria .img-box h2 {
+  font-family: "Poppins", serif;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 100%;
+  background-color:darkorange;
+  padding: 2% 5%;
+  border-radius: 8px 0 0 8px;
+  transition: bottom 0.4s, opacity;
+  color: #F9F9F9;
+}
+.container .galeria .img-box:nth-child(2) {
+  background: url(../galeria/LISTA-MELHORES-SUPER-HEROIS-MARVEL-6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container .galeria .img-box:nth-child(3) {
+  background: url(../galeria/spider-man-disneyplus.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container .galeria .img-box:nth-child(4) {
+  background: url(../galeria/pantera.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.container .galeria .img-box:nth-child(5) {
+  background: url(../galeria/falcao.webp);
+  background-position: center;
+  background-size: cover;
+}
+.container .galeria .img-box:nth-child(6) {
+  background: url(../galeria/infinita-gavião-jpg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container .galeria .img-box:nth-child(7) {
+  background: url(../galeria/hdf3_tonystark_des.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container .galeria .img-box:hover {
+  width: 300px;
+}
+.container .galeria .img-box:hover h2 {
+  opacity: 1;
+  bottom: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .img-box {
+    height: 300px;
+  }
+  .img-box:hover {
+    width: 220px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.2rem !important;
+  }
+  h2 {
+    font-size: 0.9rem !important;
+  }
+  .img-box {
+    width: 50px !important;
+    height: 200px !important;
+    border-radius: 20px !important;
+  }
+  .img-box:hover {
+    width: 110px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
